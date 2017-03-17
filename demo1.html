@@ -13,8 +13,9 @@
 
 <script type="text/javascript">
     function dispaly() {
-        var ifma = document.getElementById("aqi-input").textContent;
-        document.getElementById("aqi-display").innerText(ifma)
+        var value = document.getElementById("aqi-input").value;
+        console.log("value的值：" + value);
+        document.getElementById("aqi-display").innerHTML = value;
     }
 </script>
 </body>
