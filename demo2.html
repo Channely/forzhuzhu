@@ -22,11 +22,11 @@
         ["成都", 90],
         ["西安", 100]
     ];
-    var list = "";
+    var list = '';
     for (var i = 0; i < aqiData.length; i++) {
         var j = 1;
         if (aqiData[i][j] > 60) {
-            list += "<li>" + aqiData[i] + "</li>";
+            list += "<li>" + aqiData[i][0] + ':' + aqiData[i][1] + "</li>";
         }
     }
     document.getElementById('aqi-list').innerHTML = list;
